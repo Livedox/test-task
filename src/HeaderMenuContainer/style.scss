@@ -1,0 +1,39 @@
+@import '../constants';
+
+.header-menu-container{
+    &__title{
+        display: none;
+        font-family: $additional-font-family;
+        font-size: 24px;
+        font-weight: bold;
+        letter-spacing: 0.6px;
+        color: $additional-text-color;
+        margin-left: 30px;
+        margin-top: 42px;
+        cursor: pointer;
+        user-select: none;
+    }
+}
+
+@media (max-width: 540px) {
+    .header-menu-container__title{
+        display: block;
+    }
+    .header-menu-container__menu{
+        position: absolute;
+        top: -200px;
+        flex-direction: column;
+        margin: 0;
+        border: none;
+        display: flex;
+        transition: top 0.25s ease-in;
+        align-items: flex-start;
+    }
+    .menu__link{
+        text-align: left;
+        margin: 10px 0 10px 30px;
+    }
+    .header-menu-container__menu.active{       
+        top: 110px;    
+    }
+}

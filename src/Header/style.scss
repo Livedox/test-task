@@ -1,0 +1,25 @@
+.header{
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: top center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+@media (max-width: 768px) {
+    .header__see-more{
+        display: none;
+    }
+    .header{
+        height: 118.6vw;
+    }
+}
+
+@media (max-width: 540px) {
+    .header{
+        background-size: auto;
+        height: 83.4vw;
+    }
+}

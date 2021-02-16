@@ -1,0 +1,30 @@
+@import '../constants';
+
+.menu{
+    color: $additional-text-color;
+    font-family: $additional-font-family;
+    margin: 0 67px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    border-bottom: 1px solid $additional-text-color;
+    height: 100px;
+    font-size: 24px;
+    letter-spacing: 0.6px;
+    &__link{
+        margin: 0 25px;
+        cursor: pointer;
+        transition: color 0.25s ease-in;
+        text-align: center;
+        &:hover{
+            color: rgb(147, 146, 146);
+        }       
+    }
+}
+
+@media (max-width: 540px) {
+    .menu{
+        display: none;
+    }
+}
